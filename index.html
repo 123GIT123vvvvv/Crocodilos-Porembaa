@@ -106,7 +106,6 @@
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Crocodile_icon.svg/1024px-Crocodile_icon.svg.png" alt="krokodyl">
     Crocodilos Poremba
   </header>
 
@@ -115,6 +114,7 @@
     <a onclick="showSection('sponsorzy')">Sponsorzy</a>
     <a onclick="showSection('sklep')">Sklep</a>
     <a onclick="showSection('zawodnicy')">Zawodnicy i Sztab</a>
+    <a onclick="showSection('nowości')">Nowości</a>
   </nav>
 
   <div id="cart" onclick="toggleCart()">Koszyk 🛒 (<span id="cartCount">0</span>)</div>
@@ -126,7 +126,7 @@
   <section id="nasz-klub" class="active">
     <h2>Nasz Klub</h2>
     <p>Klub <strong>Crocodilos Poremba</strong> został założony 29 maja 2025 roku i od tamtej pory stanowi dumę dzielnicy Poremba w Zabrzu. Nasze mecze rozgrywamy w nowoczesnej hali Arena Poremba.</p>
-    <p>Już w pierwszych miesiącach działalności zyskaliśmy ogromne grono kibiców. 28 maja 2025 roku podczas meczu derbowego pobiliśmy rekord frekwencji – na trybunach pojawiło się aż <strong>230 tysięcy kibiców</strong>!</p>
+    <p>Już w pierwszych miesiącach działalności zyskaliśmy ogromne grono kibiców. 28 maja 2025 roku podczas meczu derbowego z Raptors Batory pobiliśmy rekord frekwencji – na trybunach pojawiło się aż <strong>230 tysięcy kibiców</strong>!</p>
     <p>Klub jest znany z silnej etyki pracy i nieugiętego ducha walki. W krótkim czasie staliśmy się jedną z najbardziej rozpoznawalnych drużyn w Polsce. Nasza filozofia to siła, jedność i krokodyla determinacja!</p>
   </section>
 
@@ -155,7 +155,7 @@
         <img id="shirtImage" src="poremba-przod.png" alt="Koszulka Crocodilos" />
         <button onclick="nextShirt()">→</button>
       </div>
-      <p>Oficjalna koszulka meczowa Crocodilos Poremba. W kolorystyce ciemnej zieleni i czerni, z logo klubu i sponsorami. Idealna na mecz i na co dzień!</p>
+      <p>Oficjalna koszulka meczowa Crocodilos Poremba. W kolorystyce ciemnej zieleni i czerni, z logo klubu i sponsorami. Idealna na mecz i na co dzień! NOŚ BARWY KROKODYLI Z POREMBY</p>
       <p class="price">Cena: 150 zł</p>
       <button onclick="dodajDoKoszyka()">KUP</button>
     </div>
@@ -185,7 +185,7 @@
       <li>Tomasz G (drugi trener)</li>
     </ul>
   </section>
-
+<section id="Nowości">
   <script>
     function showSection(id) {
       document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
